@@ -24,14 +24,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A8F576E2D5D837F0042A045 /* DiceRollerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRollerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A8F577F2D5D83800042A045 /* DiceRollerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A8F57892D5D83800042A045 /* DiceRollerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8F576E2D5D837F0042A045 /* ForgotMyDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForgotMyDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8F577F2D5D83800042A045 /* ForgotMyDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForgotMyDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8F57892D5D83800042A045 /* ForgotMyDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForgotMyDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5A9DFE702D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"PirataOne-Regular.ttf",
+			);
+			target = 5A8F577E2D5D83800042A045 /* ForgotMyDiceTests */;
+		};
+		5A9DFE712D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"PirataOne-Regular.ttf",
+			);
+			target = 5A8F57882D5D83800042A045 /* ForgotMyDiceUITests */;
+		};
+		5A9DFE732D6555B100CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDice" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5A8F576D2D5D837F0042A045 /* ForgotMyDice */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5A8F57702D5D837F0042A045 /* DiceRollerApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5A9DFE732D6555B100CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDice" target */,
+				5A9DFE702D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceTests" target */,
+				5A9DFE712D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceUITests" target */,
+			);
 			path = DiceRollerApp;
 			sourceTree = "<group>";
 		};
@@ -85,9 +114,9 @@
 		5A8F576F2D5D837F0042A045 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A8F576E2D5D837F0042A045 /* DiceRollerApp.app */,
-				5A8F577F2D5D83800042A045 /* DiceRollerAppTests.xctest */,
-				5A8F57892D5D83800042A045 /* DiceRollerAppUITests.xctest */,
+				5A8F576E2D5D837F0042A045 /* ForgotMyDice.app */,
+				5A8F577F2D5D83800042A045 /* ForgotMyDiceTests.xctest */,
+				5A8F57892D5D83800042A045 /* ForgotMyDiceUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A8F576D2D5D837F0042A045 /* DiceRollerApp */ = {
+		5A8F576D2D5D837F0042A045 /* ForgotMyDice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerApp" */;
+			buildConfigurationList = 5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDice" */;
 			buildPhases = (
 				5A8F576A2D5D837F0042A045 /* Sources */,
 				5A8F576B2D5D837F0042A045 /* Frameworks */,
@@ -110,16 +139,16 @@
 			fileSystemSynchronizedGroups = (
 				5A8F57702D5D837F0042A045 /* DiceRollerApp */,
 			);
-			name = DiceRollerApp;
+			name = ForgotMyDice;
 			packageProductDependencies = (
 			);
 			productName = DiceRollerApp;
-			productReference = 5A8F576E2D5D837F0042A045 /* DiceRollerApp.app */;
+			productReference = 5A8F576E2D5D837F0042A045 /* ForgotMyDice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5A8F577E2D5D83800042A045 /* DiceRollerAppTests */ = {
+		5A8F577E2D5D83800042A045 /* ForgotMyDiceTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppTests" */;
+			buildConfigurationList = 5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceTests" */;
 			buildPhases = (
 				5A8F577B2D5D83800042A045 /* Sources */,
 				5A8F577C2D5D83800042A045 /* Frameworks */,
@@ -133,16 +162,16 @@
 			fileSystemSynchronizedGroups = (
 				5A8F57822D5D83800042A045 /* DiceRollerAppTests */,
 			);
-			name = DiceRollerAppTests;
+			name = ForgotMyDiceTests;
 			packageProductDependencies = (
 			);
 			productName = DiceRollerAppTests;
-			productReference = 5A8F577F2D5D83800042A045 /* DiceRollerAppTests.xctest */;
+			productReference = 5A8F577F2D5D83800042A045 /* ForgotMyDiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5A8F57882D5D83800042A045 /* DiceRollerAppUITests */ = {
+		5A8F57882D5D83800042A045 /* ForgotMyDiceUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppUITests" */;
+			buildConfigurationList = 5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceUITests" */;
 			buildPhases = (
 				5A8F57852D5D83800042A045 /* Sources */,
 				5A8F57862D5D83800042A045 /* Frameworks */,
@@ -156,11 +185,11 @@
 			fileSystemSynchronizedGroups = (
 				5A8F578C2D5D83800042A045 /* DiceRollerAppUITests */,
 			);
-			name = DiceRollerAppUITests;
+			name = ForgotMyDiceUITests;
 			packageProductDependencies = (
 			);
 			productName = DiceRollerAppUITests;
-			productReference = 5A8F57892D5D83800042A045 /* DiceRollerAppUITests.xctest */;
+			productReference = 5A8F57892D5D83800042A045 /* ForgotMyDiceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "DiceRollerApp" */;
+			buildConfigurationList = 5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "ForgotMyDice" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A8F576D2D5D837F0042A045 /* DiceRollerApp */,
-				5A8F577E2D5D83800042A045 /* DiceRollerAppTests */,
-				5A8F57882D5D83800042A045 /* DiceRollerAppUITests */,
+				5A8F576D2D5D837F0042A045 /* ForgotMyDice */,
+				5A8F577E2D5D83800042A045 /* ForgotMyDiceTests */,
+				5A8F57882D5D83800042A045 /* ForgotMyDiceUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		5A8F57812D5D83800042A045 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5A8F576D2D5D837F0042A045 /* DiceRollerApp */;
+			target = 5A8F576D2D5D837F0042A045 /* ForgotMyDice */;
 			targetProxy = 5A8F57802D5D83800042A045 /* PBXContainerItemProxy */;
 		};
 		5A8F578B2D5D83800042A045 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5A8F576D2D5D837F0042A045 /* DiceRollerApp */;
+			target = 5A8F576D2D5D837F0042A045 /* ForgotMyDice */;
 			targetProxy = 5A8F578A2D5D83800042A045 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -396,6 +425,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiceRollerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dice;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -404,9 +436,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -414,10 +446,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = baxo.DiceRollerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -435,6 +468,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiceRollerApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dice;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -443,9 +479,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -453,10 +489,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = baxo.DiceRollerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -479,7 +516,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceRollerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DiceRollerApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForgotMyDice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ForgotMyDice";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -502,7 +539,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceRollerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DiceRollerApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForgotMyDice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ForgotMyDice";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -554,7 +591,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "DiceRollerApp" */ = {
+		5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "ForgotMyDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F57912D5D83800042A045 /* Debug */,
@@ -563,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerApp" */ = {
+		5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F57942D5D83800042A045 /* Debug */,
@@ -572,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppTests" */ = {
+		5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F57972D5D83800042A045 /* Debug */,
@@ -581,7 +618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppUITests" */ = {
+		5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F579A2D5D83800042A045 /* Debug */,
