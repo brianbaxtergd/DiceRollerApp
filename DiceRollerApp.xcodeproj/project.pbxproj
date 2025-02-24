@@ -24,32 +24,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5A8F576E2D5D837F0042A045 /* ForgotMyDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForgotMyDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A8F577F2D5D83800042A045 /* ForgotMyDiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForgotMyDiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A8F57892D5D83800042A045 /* ForgotMyDiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForgotMyDiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8F576E2D5D837F0042A045 /* DiceRollerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRollerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8F577F2D5D83800042A045 /* DiceRollerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8F57892D5D83800042A045 /* DiceRollerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5A9DFE702D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceTests" target */ = {
+		5A9DFE702D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "DiceRollerAppTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"PirataOne-Regular.ttf",
 			);
-			target = 5A8F577E2D5D83800042A045 /* ForgotMyDiceTests */;
+			target = 5A8F577E2D5D83800042A045 /* DiceRollerAppTests */;
 		};
-		5A9DFE712D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceUITests" target */ = {
+		5A9DFE712D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "DiceRollerAppUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"PirataOne-Regular.ttf",
 			);
-			target = 5A8F57882D5D83800042A045 /* ForgotMyDiceUITests */;
+			target = 5A8F57882D5D83800042A045 /* DiceRollerAppUITests */;
 		};
-		5A9DFE732D6555B100CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDice" target */ = {
+		5A9DFE732D6555B100CB86DB /* Exceptions for "DiceRollerApp" folder in "DiceRollerApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 5A8F576D2D5D837F0042A045 /* ForgotMyDice */;
+			target = 5A8F576D2D5D837F0042A045 /* DiceRollerApp */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -57,9 +57,9 @@
 		5A8F57702D5D837F0042A045 /* DiceRollerApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				5A9DFE732D6555B100CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDice" target */,
-				5A9DFE702D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceTests" target */,
-				5A9DFE712D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "ForgotMyDiceUITests" target */,
+				5A9DFE732D6555B100CB86DB /* Exceptions for "DiceRollerApp" folder in "DiceRollerApp" target */,
+				5A9DFE702D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "DiceRollerAppTests" target */,
+				5A9DFE712D65524800CB86DB /* Exceptions for "DiceRollerApp" folder in "DiceRollerAppUITests" target */,
 			);
 			path = DiceRollerApp;
 			sourceTree = "<group>";
@@ -114,9 +114,9 @@
 		5A8F576F2D5D837F0042A045 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A8F576E2D5D837F0042A045 /* ForgotMyDice.app */,
-				5A8F577F2D5D83800042A045 /* ForgotMyDiceTests.xctest */,
-				5A8F57892D5D83800042A045 /* ForgotMyDiceUITests.xctest */,
+				5A8F576E2D5D837F0042A045 /* DiceRollerApp.app */,
+				5A8F577F2D5D83800042A045 /* DiceRollerAppTests.xctest */,
+				5A8F57892D5D83800042A045 /* DiceRollerAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A8F576D2D5D837F0042A045 /* ForgotMyDice */ = {
+		5A8F576D2D5D837F0042A045 /* DiceRollerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDice" */;
+			buildConfigurationList = 5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerApp" */;
 			buildPhases = (
 				5A8F576A2D5D837F0042A045 /* Sources */,
 				5A8F576B2D5D837F0042A045 /* Frameworks */,
@@ -139,16 +139,16 @@
 			fileSystemSynchronizedGroups = (
 				5A8F57702D5D837F0042A045 /* DiceRollerApp */,
 			);
-			name = ForgotMyDice;
+			name = DiceRollerApp;
 			packageProductDependencies = (
 			);
 			productName = DiceRollerApp;
-			productReference = 5A8F576E2D5D837F0042A045 /* ForgotMyDice.app */;
+			productReference = 5A8F576E2D5D837F0042A045 /* DiceRollerApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5A8F577E2D5D83800042A045 /* ForgotMyDiceTests */ = {
+		5A8F577E2D5D83800042A045 /* DiceRollerAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceTests" */;
+			buildConfigurationList = 5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppTests" */;
 			buildPhases = (
 				5A8F577B2D5D83800042A045 /* Sources */,
 				5A8F577C2D5D83800042A045 /* Frameworks */,
@@ -162,16 +162,16 @@
 			fileSystemSynchronizedGroups = (
 				5A8F57822D5D83800042A045 /* DiceRollerAppTests */,
 			);
-			name = ForgotMyDiceTests;
+			name = DiceRollerAppTests;
 			packageProductDependencies = (
 			);
 			productName = DiceRollerAppTests;
-			productReference = 5A8F577F2D5D83800042A045 /* ForgotMyDiceTests.xctest */;
+			productReference = 5A8F577F2D5D83800042A045 /* DiceRollerAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5A8F57882D5D83800042A045 /* ForgotMyDiceUITests */ = {
+		5A8F57882D5D83800042A045 /* DiceRollerAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceUITests" */;
+			buildConfigurationList = 5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppUITests" */;
 			buildPhases = (
 				5A8F57852D5D83800042A045 /* Sources */,
 				5A8F57862D5D83800042A045 /* Frameworks */,
@@ -185,11 +185,11 @@
 			fileSystemSynchronizedGroups = (
 				5A8F578C2D5D83800042A045 /* DiceRollerAppUITests */,
 			);
-			name = ForgotMyDiceUITests;
+			name = DiceRollerAppUITests;
 			packageProductDependencies = (
 			);
 			productName = DiceRollerAppUITests;
-			productReference = 5A8F57892D5D83800042A045 /* ForgotMyDiceUITests.xctest */;
+			productReference = 5A8F57892D5D83800042A045 /* DiceRollerAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +215,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "ForgotMyDice" */;
+			buildConfigurationList = 5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "DiceRollerApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A8F576D2D5D837F0042A045 /* ForgotMyDice */,
-				5A8F577E2D5D83800042A045 /* ForgotMyDiceTests */,
-				5A8F57882D5D83800042A045 /* ForgotMyDiceUITests */,
+				5A8F576D2D5D837F0042A045 /* DiceRollerApp */,
+				5A8F577E2D5D83800042A045 /* DiceRollerAppTests */,
+				5A8F57882D5D83800042A045 /* DiceRollerAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		5A8F57812D5D83800042A045 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5A8F576D2D5D837F0042A045 /* ForgotMyDice */;
+			target = 5A8F576D2D5D837F0042A045 /* DiceRollerApp */;
 			targetProxy = 5A8F57802D5D83800042A045 /* PBXContainerItemProxy */;
 		};
 		5A8F578B2D5D83800042A045 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5A8F576D2D5D837F0042A045 /* ForgotMyDice */;
+			target = 5A8F576D2D5D837F0042A045 /* DiceRollerApp */;
 			targetProxy = 5A8F578A2D5D83800042A045 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -516,7 +516,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForgotMyDice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ForgotMyDice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceRollerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DiceRollerApp";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -539,7 +539,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForgotMyDice.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ForgotMyDice";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceRollerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DiceRollerApp";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -591,7 +591,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "ForgotMyDice" */ = {
+		5A8F57692D5D837F0042A045 /* Build configuration list for PBXProject "DiceRollerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F57912D5D83800042A045 /* Debug */,
@@ -600,7 +600,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDice" */ = {
+		5A8F57932D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F57942D5D83800042A045 /* Debug */,
@@ -609,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceTests" */ = {
+		5A8F57962D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F57972D5D83800042A045 /* Debug */,
@@ -618,7 +618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "ForgotMyDiceUITests" */ = {
+		5A8F57992D5D83800042A045 /* Build configuration list for PBXNativeTarget "DiceRollerAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A8F579A2D5D83800042A045 /* Debug */,
