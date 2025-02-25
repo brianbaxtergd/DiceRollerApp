@@ -22,7 +22,7 @@ struct ContentView: View {
     let orderedDice = ["d2", "d4", "d6", "d8", "d10", "d12", "d20", "d100"]
     
     let textFont: String = "PirataOne-Regular"
-    let textSizeResult: CGFloat = 200
+    let textSizeResult: CGFloat = 175
     let textSizeButton: CGFloat = 30
     let textSizeLog: CGFloat = 30
     let colorBackground: Color = Color(red: 0.14, green: 0.28, blue: 0.30)
@@ -40,12 +40,18 @@ struct ContentView: View {
                         ForEach(rollLog.reversed(), id: \..self) { log in
                             Text(log)
                                 .font(.custom(textFont, size: textSizeLog))
-                                .foregroundColor(colorTextMain)
+                                .foregroundColor(colorButton)
                         }
                     }
                 }
-                .frame(height: textSizeLog * 7) // Ensure at least 7 lines are visible
                 .padding()
+                .frame(maxWidth: 300)
+                .frame(height: 225) // Ensure at least 7 lines are visible
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(colorButton, lineWidth: 4)
+                )
                 
                 Text("\(result)")
                     .font(.custom(textFont, size: textSizeResult))
