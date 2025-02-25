@@ -29,6 +29,7 @@ struct ContentView: View {
     let colorButton: Color = Color(red: 0.0, green: 0.8, blue: 0.75)
     let colorTextMain: Color = Color(red: 0.92, green: 1.0, blue: 1.0)
     let colorTextSpecial: Color = Color(red: 1.0, green: 0.37, blue: 0.36)
+    let colorLogStroke: Color = Color(red: 0.12, green: 0.23, blue: 0.25)
     
     var body: some View {
         ZStack {
@@ -45,12 +46,12 @@ struct ContentView: View {
                     }
                 }
                 .padding()
-                .frame(maxWidth: 300)
+                .frame(maxWidth: 320)
                 .frame(height: 225) // Ensure at least 7 lines are visible
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
-                        .stroke(colorButton, lineWidth: 4)
+                        .stroke(colorLogStroke, lineWidth: 4)
                 )
                 
                 Text("\(result)")
