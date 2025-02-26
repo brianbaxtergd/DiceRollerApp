@@ -37,7 +37,7 @@ struct ContentView: View {
             
             VStack(spacing: 10) {
                 ScrollView {
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .center) {
                         ForEach(rollLog.reversed(), id: \..self) { log in
                             Text(log)
                                 .font(.custom(textFont, size: textSizeLog))
@@ -46,8 +46,8 @@ struct ContentView: View {
                     }
                 }
                 .padding()
-                .frame(maxWidth: 320)
-                .frame(height: 225) // Ensure at least 7 lines are visible
+                .frame(maxWidth: 326)
+                .frame(maxHeight: .infinity) // 225
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 12)
@@ -82,7 +82,7 @@ struct ContentView: View {
     func diceButton(dice: String) -> some View {
         Button(action: {
             let rollResult = rollDice(sides: diceTypes[dice]!)
-            rollLog.append("\(dice): \(rollResult)")
+            rollLog.append("\(dice)     \(rollResult)")
             
             withAnimation(Animation.default.repeatCount(3, autoreverses: true)) {
                 if rollResult == diceTypes[dice]! {
