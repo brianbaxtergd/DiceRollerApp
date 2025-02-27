@@ -6,7 +6,7 @@ struct ContentView: View {
     @State private var isRolling: Bool = false // I don't believe this is used anymore..
     @State private var pressed: Bool = false
     @State private var result: Int = 0
-    @State private var selectedDice: String = "Let's Roll"
+    @State private var selectedDice: String = "Roll Your Fate"
     @State private var audioPlayer: AVAudioPlayer?
     @State private var backgroundColor: Color = Color(red: 0.14, green: 0.28, blue: 0.30) // Original Color. See "colorBackground" above.
     let flashColor: Color = Color(red: 1.0, green: 0.37, blue: 0.36) // Flash Color. See "colorTextSpecial" above.
@@ -54,7 +54,7 @@ struct ContentView: View {
                     .frame(maxHeight: .infinity)
                     .padding()
                 
-                Spacer()
+                //Spacer()
                 
                 VStack(spacing: 10) {
                     HStack(spacing: 10) {
@@ -121,7 +121,7 @@ struct ContentView: View {
     
     func flashBackground() {
         let flashSequence = [
-            flashColor, backgroundColor, flashColor, backgroundColor
+            flashColor, colorBackground, flashColor, colorBackground
         ]
         
         var delay: Double = 0
