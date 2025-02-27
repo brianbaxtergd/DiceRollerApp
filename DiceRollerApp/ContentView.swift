@@ -141,3 +141,7 @@ struct ContentView: View {
         generator.impactOccurred()
     }
 }
+
+#Preview {
+    ContentView()
+}
