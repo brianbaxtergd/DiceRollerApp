@@ -3,14 +3,12 @@ import AVFoundation
 import CoreHaptics
 
 struct ContentView: View {
-    @State private var isRolling: Bool = false // I don't believe this is used anymore..
-    @State private var pressed: Bool = false
     @State private var result: Int = 0
-    @State private var selectedDice: String = "Let's Roll"
+    @State private var rollLog: [String] = []
     @State private var audioPlayer: AVAudioPlayer?
-    @State private var backgroundColor: Color = Color(red: 0.14, green: 0.28, blue: 0.30) // Original Color. See "colorBackground" above.
-    let flashColor: Color = Color(red: 1.0, green: 0.37, blue: 0.36) // Flash Color. See "colorTextSpecial" above.
-
+    @State private var backgroundColor: Color = Color(red: 0.14, green: 0.28, blue: 0.30)
+    let flashColor: Color = Color(red: 1.0, green: 0.37, blue: 0.36)
+    
     let diceTypes: [String: Int] = [
         "d100": 100,
         "d20": 20,
@@ -24,23 +22,37 @@ struct ContentView: View {
     let orderedDice = ["d2", "d4", "d6", "d8", "d10", "d12", "d20", "d100"]
     
     let textFont: String = "PirataOne-Regular"
-    let textSizeSelectedDice: CGFloat = 40
-    let textSizeResult: CGFloat = 200
+    let textSizeResult: CGFloat = 175
     let textSizeButton: CGFloat = 30
+    let textSizeLog: CGFloat = 30
     let colorBackground: Color = Color(red: 0.14, green: 0.28, blue: 0.30)
     let colorButton: Color = Color(red: 0.0, green: 0.8, blue: 0.75)
     let colorTextMain: Color = Color(red: 0.92, green: 1.0, blue: 1.0)
     let colorTextSpecial: Color = Color(red: 1.0, green: 0.37, blue: 0.36)
+    let colorLogStroke: Color = Color(red: 0.12, green: 0.23, blue: 0.25)
     
     var body: some View {
         ZStack {
             backgroundColor.ignoresSafeArea()
             
-            VStack(spacing: 20) {
-                Text(selectedDice)
-                    .font(.custom(textFont, size: textSizeSelectedDice))
-                    .foregroundColor(colorTextMain)
-                    .padding()
+            VStack(spacing: 10) {
+                ScrollView {
+                    VStack(alignment: .center) {
+                        ForEach(rollLog.reversed(), id: \..self) { log in
+                            Text(log)
+                                .font(.custom(textFont, size: textSizeLog))
+                                .foregroundColor(colorButton)
+                        }
+                    }
+                }
+                .padding()
+                .frame(maxWidth: 326)
+                .frame(maxHeight: .infinity) // 225
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(colorLogStroke, lineWidth: 4)
+                )
                 
                 Text("\(result)")
                     .font(.custom(textFont, size: textSizeResult))
@@ -48,22 +60,16 @@ struct ContentView: View {
                     .scaleEffect(result == 0 ? 0.5 : 1.0)
                     .opacity(result == 0 ? 0 : 1)
                     .animation(.easeOut(duration: 0.3), value: result)
-                    .font(.custom(textFont, size: textSizeResult))
-                    .foregroundColor(colorTextSpecial)
                     .padding()
-                    .frame(maxHeight: .infinity)
-                    .padding()
-                
-                Spacer()
                 
                 VStack(spacing: 10) {
                     HStack(spacing: 10) {
-                        ForEach(orderedDice.prefix(4), id: \.self) { dice in
+                        ForEach(orderedDice.prefix(4), id: \..self) { dice in
                             diceButton(dice: dice)
                         }
                     }
                     HStack(spacing: 10) {
-                        ForEach(orderedDice.suffix(4), id: \.self) { dice in
+                        ForEach(orderedDice.suffix(4), id: \..self) { dice in
                             diceButton(dice: dice)
                         }
                     }
@@ -75,13 +81,13 @@ struct ContentView: View {
     
     func diceButton(dice: String) -> some View {
         Button(action: {
-            pressed = true
-            selectedDice = dice
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { pressed = false }
+            let rollResult = rollDice(sides: diceTypes[dice]!)
+            rollLog.append("\(dice)     \(rollResult)")
+            
             withAnimation(Animation.default.repeatCount(3, autoreverses: true)) {
-                if rollDice(sides: diceTypes[dice]!) {
+                if rollResult == diceTypes[dice]! {
                     playSound(resourceName: "thunder-melody")
-                    flashBackground() // Trigger the flashing effect on critical rolls
+                    flashBackground()
                 } else {
                     playSound(resourceName: "dice-roll")
                 }
@@ -96,15 +102,13 @@ struct ContentView: View {
                 .background(colorButton)
                 .foregroundColor(colorTextMain)
                 .cornerRadius(10)
-                .scaleEffect(pressed ? 0.9 : 1.0)
-                .animation(.spring(response: 0.3, dampingFraction: 0.6), value: pressed)
         }
     }
     
-    func rollDice(sides: Int) -> Bool {
-        result = Int.random(in: 1...sides)
-        let isCritical = result == sides
-        return isCritical
+    func rollDice(sides: Int) -> Int {
+        let rolledValue = Int.random(in: 1...sides)
+        result = rolledValue
+        return rolledValue
     }
     
     func playSound(resourceName: String) {
@@ -131,7 +135,7 @@ struct ContentView: View {
                     backgroundColor = color
                 }
             }
-            delay += 0.1 // Adjust timing between flashes
+            delay += 0.1
         }
     }
     
